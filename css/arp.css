@@ -1,0 +1,257 @@
+
+body  			 {	font-family: 'Josefin Sans', sans-serif;
+				font-size: 15px;
+				color: #4c4c4c;
+				margin: 0px;							}
+
+div#allcontent		 {	margin-left: auto;
+				margin-right: auto;	
+						overflow: hidden;					}
+				
+div#allcontent a:link	 {	text-decoration: none;
+				color: #4c4c4c;							} 
+
+div#allcontent a:visited {	text-decoration: none;
+				color: #4c4c4c;							}
+
+div#leftcolumn		{	float: left;
+				}
+
+
+div#rightcolumn		{	float: right;
+					}
+
+div#centercolumn	{	margin-left: auto;
+				margin-right: auto;						}
+				
+.smallerfont	{	font-size: 10px;	}
+
+.container		{	height: 550px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+.info			{	height: 550px;
+				text-align: center;						}
+
+.hspacer1		{	height: 20px;		}
+
+.hspacer2		{	height: 10px;		}
+
+.title			{	font-size: 20px;
+				font-face: bold;	
+			}
+
+.bio			{	width: 825px;
+				align: center;
+			}
+
+.bioleft		{	float: left;
+				width: 392px;
+				height: 550px;
+			}
+
+.bioright		{	width: 433px;
+				height: 550px;
+				margin-left: 392px;
+			}
+
+.biohspacer		{	height: 90px;
+			}
+
+.biotext		{	width: 350px;
+				height: 250px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+.testimonials		{	width: 825px;
+			}
+
+.testimonialsleft	{	float: left;
+				width: 346px;
+				height: 550px;
+			}
+
+.testimonialsright	{	width: 479px;
+				height: 550px;
+				margin-left: 346px;
+			}
+
+.testimonialsheader	{	width: 350px;
+						height: 50px;
+						margin-left: auto;
+						margin-right: auto;		}
+
+.testimonialstext	{	width: 375px;
+						height: 300px;
+						margin-left: auto;
+						margin-right: auto;
+						padding: 0px 30px 0px 30px;
+						overflow: auto;			}
+
+.testimonialshspacer	{	height: 90px;
+			}
+
+.pricing		{	width: 825px;
+				align: center;
+			}
+
+.pricingleft		{	float: left;
+				width: 458px;
+				height: 550px;
+				align: right;
+			}
+
+.pricingtext		{	width: 420px;
+				height: 250px;
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 14px;
+			}
+
+.pricinghspacer		{	height: 90px;
+			}
+
+.pricingright		{	width: 367px;
+				height: 550px;
+				margin-left: 458px;
+			}
+
+.contact		{	width: 825px;
+			}
+
+.contactleft		{	float: left;
+				width: 378px;
+				height: 550px;
+			}
+
+.contacthspacer		{	height: 150px;
+			}
+
+.contacttextright	{	width: 350px;
+				height: 120px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+.contactform		{	margin-left: 25px;
+				width: 275px;
+			}
+
+.input1			{	text-align: right;
+			}
+
+.formhspacer		{	height: 5px;
+			}
+
+.input1 input		{	background: #e6e8e8;
+				border: none;
+				width: 200px;
+				border: 1px solid white;
+			}
+
+label			{	vertical-align: top;
+			}
+
+textarea		{	background: #e6e8e8;
+				border: 1px solid white;
+				width: 200px;
+				resize: none;
+			}
+
+.submit			{	margin-left: 60px;
+			}
+
+.errormessages		{
+				color: red;
+				font-size: 13px;
+				margin-left: 55px;
+			}
+
+
+.contactright		{	width: 447px;
+				height: 550px;
+				margin-left: 378px;
+			}
+
+div.logo		{	width: 274px;
+				height: 26px;
+				border: none;
+				margin-left: auto;
+				margin-right: auto;						}
+
+.menulevel1		{	width: 775px;
+				height: 25px;	
+				margin-left: auto;
+				margin-right: auto;								}
+
+.spacer			{	margin-left: 566px;	}
+
+.nolist			{	height: 25px;		}
+
+.gallerylist		{	width: 582px;
+				height: 25px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+.gallerylist ul li	{
+				margin-left: 0;
+				padding: 0px;
+				list-style: none;
+				display: inline;
+			}
+
+.infolist		{	width: 380px;
+				height: 25px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+.menu			{	padding-left: 15px;
+				padding-right: 15px;
+				height: 25px;
+				text-align: center;
+				line-height: 1.6em;
+			}
+
+.hover	 		{	padding-left: 25px;
+				padding-right: 25px;
+				background: white;
+				float: left;
+				height: 25px;
+			}
+
+.selected 		{
+				background: url(../images/menubkgnd.png) no-repeat center top;
+			}
+
+.clickedselected 	{
+				background: url(../images/menubkgnd.png) no-repeat center top;
+			}
+
+.hoverselected 	{
+				background: url(../images/menubkgndhover.png) no-repeat center top;
+			}
+
+.button			{	border: none;
+				background: #e6e8e8;
+				cursor: pointer;
+			}
+
+.button:hover		{	border: none;
+				background: #c4c9c9;
+				cursor: pointer;
+			}
+
+.brochurebutton		{	align: center;
+				width: 140px;
+				height: 15px;
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 12px;
+			}
+
+.smallerfont			{	font-size: 12px;
+			}

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+ 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<meta name="description" content="Arlene Repar Photography provides beautiful modern photography specializing in weddings, engagements, children, families and special events, based in Trenton, Ontario and serving Toronto and the GTA.">
+			
+	<title>Contact Form</title> 
+	<link rel="shortcut icon" href="http://www.arlenerepar.com/favicon.ico">
+
+	<link type='text/css' rel='stylesheet' href='http://fonts.googleapis.com/css?family=Josefin+Sans'>
+	<link type="text/css" rel="stylesheet" href="css/arp.css" />
+
+
+	<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<script type="text/javascript">
+		var winW = 630, winH = 460;
+		if (document.body && document.body.offsetWidth) {
+ 			winW = document.body.offsetWidth;
+ 			winH = document.body.offsetHeight;
+		}
+		if (document.compatMode=='CSS1Compat' && document.documentElement && document.documentElement.offsetWidth ) {
+ 			winW = document.documentElement.offsetWidth;
+			winH = document.documentElement.offsetHeight;
+		}
+		if (window.innerWidth && window.innerHeight) {
+			winW = window.innerWidth;
+			winH = window.innerHeight;
+		}
+	</script>
+
+	<script type="text/javascript">
+	 	$(document).ready(function() {
+			$('.nameerror').hide();
+			$('.phoneerror').hide();
+			$('.messageerror').hide();
+		});
+	</script>
+
+	<script type="text/javascript">
+		function validateform() {
+			//var falsecounter=0;
+			var namefield=document.forms["contactform"]["name"].value;
+			var phonefield=document.forms["contactform"]["phone"].value;
+			var messagefield=document.forms["contactform"]["message"].value;
+			if (namefield==null || namefield=="") {
+				$('.nameerrorspacer').hide();
+				$('.nameerror').show();
+				//falsecounter=falsecounter+1;
+			}
+			if (phonefield==null || phonefield=="") {
+				$('.phoneerrorspacer').hide();
+				$('.phoneerror').show();
+
+			}
+			if (messagefield==null || messagefield=="") {
+				$('.messageerrorspacer').hide();
+				$('.messageerror').show();
+				return false;
+			}
+			// if falsecounter equals not 0, return false
+		}
+	</script>
+
+	<script type="text/javascript">
+		function hidenameerror() {
+			$('.nameerror').hide();
+			$('.nameerrorspacer').show();
+		}
+		function hidephoneerror() {
+			$('.phoneerror').hide();
+			$('.phoneerrorspacer').show();
+		}
+		function hidemessageerror() {
+			$('.messageerror').hide();
+		}
+
+	</script>
+
+</head> 
+ 
+<body> 
+ 
+<div id="allcontent"> 
+ 
+<div id="leftcolumn"><img class="border" src="images/backgroundleft.png"></div>
+
+<div id="rightcolumn"><img class="border" src="images/backgroundright.png"></div>
+
+<script type="text/javascript">
+	$('.border').css('height', .99*winH);
+</script>
+
+<div id="centercolumn">
+
+	<div class="contact info container">
+		<div class="contactleft">
+			<div class="contacthspacer"></div>
+			<div class="contacttext">
+				<p>613-394-5289
+				<p>416-895-5159 cell
+				<p>info@arlenerepar.com
+			</div>
+
+			<div class="contactform">
+
+				<form name="contactform" id="contactform" onsubmit="return validateform()" method="post" action="/gdform.php" >
+					<div class="input1">
+						<input type="hidden" name="subject" value="Inquiry from website" />
+						name <input type="text" id="name" onkeyup="hidenameerror()"> *					
+						<div class="formhspacer"></div>
+						phone <input type="text" id="phone" onkeyup="hidephoneerror()"> *
+						<div class="formhspacer"></div>
+						email <input type="text" id="email">&nbsp;&nbsp;
+						<div class="formhspacer"></div>
+						<label>message </label><textarea rows="10" cols="30" id="message" onkeyup="hidemessageerror()"></textarea><label> *</label>
+						<div class="formhspacer"></div>
+					</div>
+					<div class="input2">
+						<input type="submit" value="Submit" class="submit"></p>
+					</div>
+
+				</form>
+				<div class=<errormessages">
+					<div class="nameerrorspacer"></div>
+					<div class="nameerror">Please enter your name</div>
+
+					<div class="phoneerrorspacer"></div>
+					<div class="phoneerror">Please enter your phone number</div>
+
+					<div class="messageerror">Please enter a message</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="contactright"><img src="images/pictures/wedding/IMG_1548.jpg"></div>
+	</div>
+
+</div><!-- centercolumn -->
+
+
+
+
+</div>
+ 
+</div> 
+ 
+</body>
+
+</html>
